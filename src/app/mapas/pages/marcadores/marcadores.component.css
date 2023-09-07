@@ -1,0 +1,36 @@
+
+
+.markers-list{
+  color: rgb(46, 46, 46);
+  font-weight: bolder;
+  opacity: 0.8;
+}
+
+.close-icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0.3rem;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.596);
+}
+
+.close-icon:active{
+  transform: scale(0.9);
+}
+.close-icon:hover{
+  color: bisque;
+}
+
+.add-marker-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 801px) {
+
+}

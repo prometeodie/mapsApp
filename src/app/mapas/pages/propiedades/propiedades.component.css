@@ -1,0 +1,10 @@
+.card-info{
+  min-height: 10rem;
+  max-block-size: 10rem;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.title{
+  margin-left: 2rem;
+}

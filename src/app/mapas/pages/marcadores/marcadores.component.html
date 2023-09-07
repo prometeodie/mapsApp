@@ -1,18 +1,18 @@
 
 
-<ul class="list-group">
-  <li class="list-group-item list-group-item-info"
+<ul class="list-group markers-list">
+  <li class="list-group-item list-group-item-info add-marker-btn"
       (click)="newMarker()">
-    + Agregar
+    +
   </li>
   <li class="list-group-item list-group-item-info"
       *ngFor="let marcador of markers; let i= index"
       [ngStyle]="{
         'background-color': marcador.color
       }"
-      (click)="irMarcador(marcador.marker)"
-      (dblclick)="deleteMarker(i)">
-    marker {{i+1}}
+      (click)="irMarcador(marcador.marker)">
+        M{{i+1}}
+    <i class="fa-solid fa-xmark close-icon" (click)="deleteMarker(i)"></i>
   </li>
 </ul>
 <div #map class="mapa-container"></div>

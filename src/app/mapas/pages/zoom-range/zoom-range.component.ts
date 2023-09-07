@@ -10,19 +10,6 @@ import * as mapboxgl from 'mapbox-gl';
     width: 100%;
     height: 100%;
    }
-
-   .row{
-    background-color: white;
-    border-radius: 5px;
-    bottom:50px;
-    left:50px;
-    padding:10px;
-    width:300px;
-
-    position:fixed;
-    z-index: 9999;
-   }
-
    `
   ]
 })
@@ -67,7 +54,9 @@ export class ZoomRangeComponent implements AfterViewInit,OnDestroy {
     this.map.on('move', (event)=>{
       const target = event.target;
       const {lng, lat} = target.getCenter()
-      this.center =[lng, lat];
+      const long = parseFloat(lng.toFixed(4));
+      const latitud = parseFloat(lat.toFixed(4));
+      this.center =[long, latitud];
     })
 
 

@@ -61,7 +61,7 @@ export class MarcadoresComponent implements  AfterViewInit {
   newMarker(){
 
     if(this.markers.length >= 10){
-      alert('has alcanzado el numero maximo de marcadores');
+      alert('you have reached the maximum number of markers');
       return;
     }
     const color = "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16));

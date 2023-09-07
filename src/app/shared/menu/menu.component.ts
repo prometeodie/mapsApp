@@ -20,16 +20,12 @@ export class MenuComponent  {
 
   menu: MenuItem[] =[
     {
-      ruta: '/mapas/fullScreen',
-      nombre: 'FullScreen'
-    },
-    {
       ruta: '/mapas/zoomRange',
-      nombre: 'Zoom Range'
+      nombre: 'Map'
     },
     {
       ruta: '/mapas/marcadores',
-      nombre: 'Marcadores'
+      nombre: 'Markers'
     },
     {
       ruta: '/mapas/propiedades',
@@ -37,5 +33,9 @@ export class MenuComponent  {
     },
   ]
 
+  isMenuClosed:boolean = true;
 
+  closeMenu(){
+    this.isMenuClosed = !this.isMenuClosed;
+  }
 }

@@ -1,11 +1,12 @@
-
-
-<ul class="list-group">
-  <li class="list-group-item"
-      *ngFor="let item of menu"
-      [routerLink]="[item.ruta]"
-      routerLinkActive="active"
-  >
-    {{item.nombre}}
-  </li>
-</ul>
+<nav>
+  <i class="fa-solid fa-bars burguer-menu" (click)="closeMenu()"></i>
+  <ul class="list-group" *ngIf="isMenuClosed">
+    <li class="list-group-item menu"
+        *ngFor="let item of menu"
+        [routerLink]="[item.ruta]"
+        routerLinkActive="active"
+    >
+      {{item.nombre}}
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,46 @@
+
+
+.zoom-board{
+width: 100%;
+height: 14rem;
+position: absolute;
+display: flex;
+justify-content: center;
+bottom: 0;
+}
+
+.parameters-card{
+  background-color: rgba(83, 78, 78, 0.5);
+}
+
+.label{
+  color: #fff;
+}
+
+.zoom-btn{
+  width: 3rem;
+}
+.board{
+      width: 300px;
+      max-width: 20rem;
+      position: absolute;
+      border-radius: 5px;
+      padding: 10px;
+      bottom: 0;
+      width: 90%;
+      padding: 1rem;
+      margin-bottom: 2rem;
+}
+
+
+/* MEDIA QUERIESS */
+
+@media (min-width: 801px) {
+  .zoom-board{
+    justify-content: flex-start;
+  }
+
+  .board{
+    margin-left: 2rem;
+  }
+}
