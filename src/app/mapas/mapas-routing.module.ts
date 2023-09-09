@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PropiedadesComponent } from './pages/propiedades/propiedades.component';
 import { ZoomRangeComponent } from './pages/zoom-range/zoom-range.component';
 import { MarcadoresComponent } from './pages/marcadores/marcadores.component';
+import { MapScreenComponent } from './pages/map-screen/map-screen.component';
 
 const routes: Routes = [
   {
@@ -21,8 +22,12 @@ const routes: Routes = [
       component: MarcadoresComponent
     },
     {
+      path: 'mapScreen',
+      component: MapScreenComponent
+    },
+    {
       path:'**',
-      redirectTo:'zoomRange'
+      redirectTo:'mapScreen'
     }
     ]
   }

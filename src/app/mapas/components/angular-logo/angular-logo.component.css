@@ -1,0 +1,20 @@
+.logo-linkedin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 1.5rem;
+  right:  1.5rem;
+}
+
+img{
+  width: 3rem;
+}
+
+h3{
+  font-size:small;
+}
+a{
+  color: rgb(131, 131, 238);
+  text-decoration: none;
+}
