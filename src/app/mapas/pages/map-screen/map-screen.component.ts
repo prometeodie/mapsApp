@@ -15,4 +15,7 @@ export class MapScreenComponent{
     return this.placesService.isUserLocationReady;
   }
 
+  closeSearchBar(){
+    this.placesService.deletePlaces()
+  }
 }

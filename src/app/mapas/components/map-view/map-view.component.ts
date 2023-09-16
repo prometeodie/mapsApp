@@ -28,7 +28,7 @@ export class MapViewComponent implements AfterViewInit {
       const popup = new Popup()
       .setHTML(`
         <h6>You are here!</h6>
-        <span> you are in this word place</span>
+        <span> you are in this world place</span>
       `);
 
       new Marker({color: 'red'})
@@ -40,4 +40,7 @@ export class MapViewComponent implements AfterViewInit {
 
   }
 
+  closeSearchBar(){
+    this.placesService.deletePlaces()
+  }
 }
