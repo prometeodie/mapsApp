@@ -22,6 +22,7 @@ export class SearchResultComponent {
     return this.placesService.places;
   }
 
+  // TODO:modificar el dominio para que solo la url de vercel pueda acceder al api,, arreglar 320 propiedades css error
 
   flyTo(place: Feature){
     this.selectedId = place.id;
