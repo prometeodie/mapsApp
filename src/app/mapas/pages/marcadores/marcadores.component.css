@@ -1,9 +1,12 @@
 
 
 .markers-list{
+  height: 100%;
   color: rgb(46, 46, 46);
   font-weight: bolder;
   opacity: 0.8;
+  padding-bottom: 1.2rem;
+
 }
 
 .close-icon{
@@ -27,5 +30,4 @@
   justify-content: center;
   align-items: center;
   font-size: x-large;
-  width: 4rem;
 }
