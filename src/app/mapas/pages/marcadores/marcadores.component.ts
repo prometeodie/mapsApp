@@ -41,7 +41,7 @@ export class MarcadoresComponent implements  AfterViewInit {
   @ViewChild('map') divMap!: ElementRef;
   map!: mapboxgl.Map;
   zoomLvl: number = 15;
-  center : [number, number] =  [-59.106285, -37.323924];
+  center : [number, number] =  [-59.1156571, -37.3358118];
   markers  : Marker[]  = [];
 
   constructor() { }
